@@ -11,6 +11,7 @@
 <body>
   <header class="bg-dark text-white p-3 text-center">
     <h1 class="h3 m-0">Login ke Online Course</h1>
+    <button id="dark-mode-toggle" class="btn btn-outline-light btn-sm">Dark Mode</button>
   </header>
 
   <main class="container my-4">
@@ -62,5 +63,23 @@
       }
     });
   </script>
+  
+  <script>
+    const toggleBtn = document.getElementById('dark-mode-toggle');
+  
+    // Cek preferensi user
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      toggleBtn.innerText = 'Light Mode';
+    }
+  
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      toggleBtn.innerText = isDark ? 'Light Mode' : 'Dark Mode';
+      localStorage.setItem('darkMode', isDark);
+    });
+  </script>
+  
 </body>
 </html>
