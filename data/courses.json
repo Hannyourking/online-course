@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Belajar JavaScript Dasar",
+      "description": "Kursus untuk memahami dasar-dasar JavaScript.",
+      "image": "https://via.placeholder.com/250x150?text=JavaScript",
+      "price": "Gratis"
+    },
+    {
+      "id": 2,
+      "title": "HTML & CSS untuk Pemula",
+      "description": "Pelajari cara membuat website dengan HTML & CSS.",
+      "image": "https://via.placeholder.com/250x150?text=HTML+CSS",
+      "price": "Rp 100.000"
+    }
+  ]
+  
